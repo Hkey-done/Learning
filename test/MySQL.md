@@ -14,7 +14,11 @@ MySQL启动服务器无响应问题：在MySQL解压包bin文件中添加vcrunti
 
 进入MySQL命令模式：mysql -u root -p
 
-修改密码：ALTER USER root@localhost IDENTIFIED BY ‘密码’
+修改用户名：rename user 'old name'@'localhost'
+
+​						to 'new name'@'localhost';
+
+修改密码：ALTER USER root@localhost IDENTIFIED BY ‘密码’；
 
 删除MySQL： mysqld --remove mysql
 
